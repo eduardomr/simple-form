@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Crie uma conta</h1>
+    </header>
+    <form class="form-container" action="./success.html">
+      <div class="form-row">
+        <label class="form-label" for="fullName">Nome Completo</label>
+        <input
+          id="fullName"
+          type="text"
+          class="form-input"
+          placeholder="Digite seu nome completo"
+          required
+        />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          class="form-input"
+          placeholder="Digite seu e-mail"
+          required
+        />
+      </div>
+
+      <div class="form-row">
+        <label class="form-label" for="password">Senha</label>
+        <input
+          id="password"
+          type="password"
+          class="form-input"
+          placeholder="Digite sua senha"
+          required
+        />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="birthDate">Data de nascimento</label>
+        <input type="date" id="birthDate" class="form-input" required/>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="gender">Gênero</label>
+        <select id="gender" class="form-input" required>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <input type="checkbox" id="privacyTerms" required/>
+        <label class="form-small-label" for="privacyTerms"
+          >Aceito as políticas de privacidade</label
+        >
+      </div>
+      <div class="form-row">
+        <input type="submit" value="Criar conta" class="form-button" />
+      </div>
+    </form>
+  </body>
+</html>
